@@ -1,0 +1,12 @@
+function factorialize(num) {
+  
+  var arrayTotal = 1;
+   
+  for (var j = 1; j <= num; j++) {
+    arrayTotal = arrayTotal * j;
+  } 
+   var result = arrayTotal;
+   return result;
+}
+
+factorialize(5);
