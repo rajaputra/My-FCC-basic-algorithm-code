@@ -1,0 +1,7 @@
+function palindrome(str) {
+  // Good luck!
+  
+  var strLower = str.replace(/[^A-Z0-9]/ig, '').toLowerCase();
+  var palCheck = strLower.split("").reverse().join(""); 
+  return strLower == palCheck;
+}
