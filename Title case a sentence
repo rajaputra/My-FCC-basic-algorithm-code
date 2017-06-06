@@ -1,0 +1,14 @@
+
+function titleCase(str) {
+//  var splitStr = str.split(/\s/g);
+// for (var i=0; i <splitStr.lenght; i++) {
+//   var modifStr = 
+// }
+//  var joinStr = splitStr.join(" ");
+//  return splitStr;
+
+    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+
+}
+
+titleCase("I'm a little tea pot");
