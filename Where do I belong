@@ -1,0 +1,14 @@
+function getIndexToIns(arr, num) {
+  // Find my place in this sorted array.
+  var numIndex = 0;
+  //define an index placeholder 
+  for (var i=0; i<arr.length; i++) {
+    //cek if arr value - number return negative it is smaller number
+    if (arr[i] -num < 0) {
+      numIndex = numIndex+1;
+    }
+  }
+  return numIndex;
+}
+
+getIndexToIns([40, 60], 50);
