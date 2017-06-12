@@ -1,0 +1,23 @@
+
+function rot13(str) { // LBH QVQ VG!
+  var splitStr = str.split('');// split the string to define each char number
+  //defining placeholder an then iterate trought the split string with map
+  var splitCode = splitStr.map(function(char){
+    //defining placeholder for each char code  
+    var x = char.charCodeAt(0);
+    //check code value if its not betwen A-Z then returning default
+    if (x < 65 || x > 90) {
+      return String.fromCharCode(x);
+    }
+      //check code value if its betwen less then midle alpabhet of A-Z then returning its converter 
+      else if (x < 78) {
+        return String.fromCharCode(x+13);
+      }
+    return String.fromCharCode(x-13);
+    });
+ 
+  return splitCode.join(''); //join back the decoded string
+}
+
+// Change the inputs below to test
+rot13("SERR PBQR PNZC");
